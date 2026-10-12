@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <meta name="description" content="Modewji Foundation — mfumo wa taarifa na maombi ya mikopo.">
+  <title>Modewji Foundation | Mfumo wa Mikopo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#mwanzo" aria-label="Modewji Foundation mwanzo">
+      <span class="brand-mark">MF</span>
+      <span><strong>MODEWJI</strong><small>FOUNDATION</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ <span class="sr-only">Fungua menyu</span></button>
+    <nav id="mainNav" class="nav">
+      <a href="#mwanzo">Mwanzo</a><a href="#huduma">Huduma</a><a href="#hatua">Jinsi inavyofanya kazi</a><a href="#maswali">Maswali</a>
+      <button class="btn btn-outline btn-small" data-open="loginPanel">Ingia</button>
+      <a class="btn btn-gold btn-small" href="#maombi">Anza maombi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="mwanzo">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> HUDUMA ZA FEDHA · TAARIFA KWA UWAZI</span>
+        <h1>Hatua yako inayofuata inaanza na <em>mpango sahihi.</em></h1>
+        <p>Karibu Modewji Foundation. Pata maelezo ya huduma zetu, soma masharti, na ujifunze hatua za kuwasilisha ombi la mkopo kwa utaratibu.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#maombi">Anza maombi <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="#hatua">Jifunze zaidi</a></div>
+        <div class="trust-row"><span>✓ Maelezo yaliyo wazi</span><span>✓ Mapitio ya maombi</span><span>✓ Faragha ni muhimu</span></div>
+      </div>
+      <div class="hero-card" aria-label="Muhtasari wa hatua za maombi">
+        <div class="card-top"><span class="mini-icon">MF</span><span class="status-pill"><i></i> Mfumo wa maelezo</span></div>
+        <p class="muted upper">HATUA ZA MAOMBI</p>
+        <h2>Safari ya maombi</h2>
+        <div class="progress-step"><span class="step-no">01</span><div><strong>Soma masharti</strong><small>Fahamu vigezo na gharama kabla ya kuendelea.</small></div><span class="step-check">✓</span></div>
+        <div class="progress-step"><span class="step-no">02</span><div><strong>Jaza taarifa</strong><small>Andaa taarifa za mwombaji na mdhamini.</small></div></div>
+        <div class="progress-step"><span class="step-no">03</span><div><strong>Mapitio ya msimamizi</strong><small>Uamuzi hufanywa baada ya ukaguzi.</small></div></div>
+        <div class="notice"><span aria-hidden="true">ⓘ</span><p>Hii ni toleo la mwanzo la majaribio. Maombi na malipo halisi bado hayapokelewi.</p></div>
+      </div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+    </section>
+
+    <section class="stats-strip" aria-label="Kanuni za huduma">
+      <div><span class="stat-icon">01</span><p><strong>Uwazi</strong><small>Masharti yafahamike mapema</small></p></div>
+      <div><span class="stat-icon">02</span><p><strong>Uhakiki</strong><small>Maombi yapitiwe kabla ya uamuzi</small></p></div>
+      <div><span class="stat-icon">03</span><p><strong>Usalama</strong><small>Taarifa binafsi zilindwe</small></p></div>
+    </section>
+
+    <section class="section" id="huduma">
+      <div class="section-heading"><span class="eyebrow">HUDUMA ZETU</span><h2>Msaada unaoanza na taarifa sahihi</h2><p>Tunajenga mfumo unaomsaidia mteja kuelewa mchakato kabla ya kuwasilisha ombi.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">↗</div><h3>Taarifa za mikopo</h3><p>Angalia hatua za maombi na viwango vinavyopangwa kuwekwa kwenye mfumo baada ya kuthibitishwa rasmi.</p><a href="#viwango">Angalia viwango <span>→</span></a></article>
+        <article class="service-card"><div class="service-icon">▤</div><h3>Masharti yaliyo wazi</h3><p>Soma masharti, gharama, muda wa marejesho na taarifa za kampuni kabla ya kuamua kuendelea.</p><a href="#masharti">Soma masharti <span>→</span></a></article>
+        <article class="service-card"><div class="service-icon">♧</div><h3>Mapitio ya maombi</h3><p>Maombi yatahitaji kukaguliwa na msimamizi. Kutuma ombi hakumaanishi mkopo umeidhinishwa.</p><a href="#hatua">Jifunze hatua <span>→</span></a></article>
+      </div>
+    </section>
+
+    <section class="amount-section" id="viwango">
+      <div class="amount-copy"><span class="eyebrow">VIWANGO VYA MKOPO</span><h2>Chagua kwa taarifa kamili</h2><p>Viwango vilivyopendekezwa hapa ni vya kuonyesha tu. Kiasi kinachoruhusiwa, ada, riba na masharti ya marejesho vitathibitishwa na kampuni kabla ya mfumo wa maombi kuanza kutumika.</p><a class="text-link" href="#masharti">Soma taarifa muhimu <span>→</span></a></div>
+      <div class="amount-panel"><div class="amount-panel-head"><span>Viwango vilivyopangwa</span><span class="status-pill status-pending">Bado vinathibitishwa</span></div><div class="amount-chips"><span>TSh 300,000</span><span>TSh 400,000</span><span>TSh 500,000</span><span>TSh 600,000</span><span>TSh 700,000</span><span>TSh 800,000</span><span>TSh 900,000</span><span>TSh 1,000,000</span><span>TSh 1,500,000</span><span>TSh 2,000,000</span><span>TSh 3,000,000</span><span>TSh 4,000,000</span><span>TSh 5,000,000</span><span>TSh 6,000,000</span><span>TSh 7,000,000</span><span>TSh 8,000,000</span><span>TSh 9,000,000</span><span>TSh 10,000,000</span><span>TSh 20,000,000*</span></div><small class="muted">* Kiwango cha TSh 20,000,000 kinahitaji uthibitisho tofauti.</small></div>
+    </section>
+
+    <section class="section steps-section" id="hatua">
+      <div class="section-heading"><span class="eyebrow">MCHAKATO</span><h2>Hatua tatu zilizo wazi</h2><p>Mchakato unaolengwa kwa mfumo kamili utakuwa na hatua hizi.</p></div>
+      <div class="steps-grid"><article><span>01</span><h3>Soma masharti</h3><p>Thibitisha vigezo, gharama, muda wa mkopo na nyaraka rasmi za kampuni.</p></article><article><span>02</span><h3>Wasilisha taarifa</h3><p>Jaza fomu na taarifa zinazohitajika kupitia mfumo salama utakapoanzishwa.</p></article><article><span>03</span><h3>Subiri mapitio</h3><p>Msimamizi atakagua ombi. Ujumbe wa malipo pekee hautamaanisha mkopo umeidhinishwa.</p></article></div>
+    </section>
+
+    <section class="application-section" id="maombi">
+      <div class="application-intro"><span class="eyebrow">ANZA HAPA</span><h2>Fungua akaunti au ingia</h2><p>Kwa sasa fomu hizi ni za kuonyesha muonekano tu. Hazitumi wala kuhifadhi taarifa zako.</p><div class="security-note"><span>⌑</span><p><strong>Taarifa zako ni muhimu.</strong><br>Usiweke namba yako ya NIDA, nywila, picha binafsi au taarifa za malipo kwenye toleo hili la majaribio.</p></div></div>
+      <div class="form-card">
+        <div class="tabs" role="tablist" aria-label="Aina ya akaunti"><button class="tab active" id="loginTab" role="tab" aria-selected="true" aria-controls="loginPanel" data-tab="loginPanel">Ingia</button><button class="tab" id="registerTab" role="tab" aria-selected="false" aria-controls="registerPanel" data-tab="registerPanel">Fungua akaunti</button></div>
+        <form id="loginPanel" class="demo-form" role="tabpanel" aria-labelledby="loginTab">
+          <h3>Karibu tena</h3><p class="muted">Ingia kwenye akaunti yako</p>
+          <label for="loginPhone">Namba ya simu</label><input id="loginPhone" name="phone" type="tel" placeholder="Mf. 07XX XXX XXX" autocomplete="tel" required>
+          <label for="loginPassword">Nenosiri</label><input id="loginPassword" name="password" type="password" placeholder="Weka nenosiri" autocomplete="current-password" required>
+          <button class="forgot-link" type="button" data-open="resetPanel">Umesahau nenosiri?</button>
+          <button class="btn btn-primary btn-full" type="submit">Ingia <span>→</span></button>
+          <p class="form-foot">Hujasajiliwa? <button type="button" class="inline-action" data-tab="registerPanel">Fungua akaunti</button></p>
+        </form>
+        <form id="registerPanel" class="demo-form hidden" role="tabpanel" aria-labelledby="registerTab">
+          <h3>Fungua akaunti</h3><p class="muted">Tengeneza akaunti ya mteja</p>
+          <label for="registerName">Majina kamili</label><input id="registerName" name="name" type="text" placeholder="Majina yako kamili" autocomplete="name" required>
+          <label for="registerPhone">Namba ya simu</label><input id="registerPhone" name="phone" type="tel" placeholder="Mf. 07XX XXX XXX" autocomplete="tel" required>
+          <label for="registerPassword">Tengeneza nenosiri</label><input id="registerPassword" name="password" type="password" placeholder="Angalau herufi 8 (mfano)" autocomplete="new-password" minlength="8" required>
+          <label class="check-row"><input type="checkbox" required> Nimesoma taarifa ya faragha na masharti ya majaribio.</label>
+          <button class="btn btn-primary btn-full" type="submit">Endelea <span>→</span></button>
+          <p class="form-foot">Una akaunti? <button type="button" class="inline-action" data-tab="loginPanel">Ingia</button></p>
+        </form>
+        <form id="resetPanel" class="demo-form hidden" role="tabpanel">
+          <h3>Rejesha nenosiri</h3><p class="muted">Weka namba ya simu iliyosajiliwa.</p><label for="resetPhone">Namba ya simu</label><input id="resetPhone" type="tel" placeholder="Mf. 07XX XXX XXX" required><button class="btn btn-primary btn-full" type="submit">Omba maelekezo</button><button class="inline-action back-login" type="button" data-tab="loginPanel">Rudi kwenye kuingia</button>
+        </form>
+        <div id="demoMessage" class="demo-message hidden" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section terms-section" id="masharti"><div class="section-heading"><span class="eyebrow">TAARIFA MUHIMU</span><h2>Masharti na uwajibikaji</h2><p>Haya ni maelezo ya awali, si mkataba wa mkopo wala ahadi ya kutoa fedha.</p></div><div class="terms-grid"><article><h3>Gharama na marejesho</h3><p>Ada, riba, muda wa marejesho, adhabu na masharti ya bima bado yanahitaji kuthibitishwa. Hakuna ada iliyowekwa kama rasmi kwenye toleo hili.</p></article><article><h3>Nyaraka za kampuni</h3><p>Nyaraka za usajili na uthibitisho rasmi wa kampuni zinapaswa kuwekwa hapa baada ya kuhakikiwa. Hakuna nyaraka za kampuni zilizowasilishwa kwenye mfumo huu bado.</p></article><article><h3>Malipo</h3><p>Muunganisho wa Pawnpesa haujawezeshwa. Usitume pesa kwa kutegemea ukurasa huu; API na utaratibu wa kuthibitisha malipo lazima vikaguliwe kwanza.</p></article></div></section>
+
+    <section class="faq-section" id="maswali"><div class="section-heading"><span class="eyebrow">MASWALI YA MARA KWA MARA</span><h2>Unachopaswa kujua</h2></div><div class="faq-list"><details><summary>Nikijaza fomu, nitapata mkopo moja kwa moja?</summary><p>Hapana. Katika mfumo kamili, kila ombi litakaguliwa na msimamizi na uamuzi utaelezwa kwa mteja.</p></details><details><summary>Je, malipo ya awali yanahitajika?</summary><p>Hakuna kiasi cha malipo kilichothibitishwa. Ada na masharti yatatangazwa baada ya kampuni kuyathibitisha kwa maandishi.</p></details><details><summary>Naweza kuweka NIDA yangu hapa?</summary><p>Hapana. Hii ni demo ya muonekano pekee. Usitume taarifa nyeti mpaka mfumo salama na sera ya faragha vikamilike.</p></details></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand brand-light" href="#mwanzo"><span class="brand-mark">MF</span><span><strong>MODEWJI</strong><small>FOUNDATION</small></span></a><p>© <span id="year"></span> Modewji Foundation. Haki zote zimehifadhiwa.</p><a href="#masharti">Masharti na taarifa</a></footer>
+  <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
