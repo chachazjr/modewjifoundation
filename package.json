@@ -1,0 +1,12 @@
+{
+  "name": "modewjifoundation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mfumo wa maombi ya mikopo wa Modewji Foundation — toleo la mwanzo",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
