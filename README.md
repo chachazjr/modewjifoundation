@@ -1,46 +1,53 @@
 # Modewji Foundation — Mfumo wa Mikopo
 
-Mradi wa kujenga mfumo wa maombi na usimamizi wa mikopo kwa wateja na wasimamizi.
+Mfumo wa maombi ya mikopo kwa wateja na wasimamizi. Toleo lililopo ni **prototype ya kiolesura** inayoweza kuendeshwa kwenye kompyuta; bado si huduma ya kupokea maombi halisi.
 
-## Hali ya sasa
-Hii ni nyaraka ya mwanzo ya mahitaji. Mfumo bado haujajengwa na hakuna malipo au maombi halisi yanayopaswa kutumwa kupitia repository hii.
+## Kuendesha kwenye kompyuta
+1. Sakinisha Node.js 18 au toleo jipya zaidi.
+2. Pakua au clone repository hii.
+3. Fungua terminal ndani ya folda ya mradi.
+4. Endesha \`npm start\`.
+5. Fungua \`http://localhost:3000\` kwenye kivinjari.
 
-## Sehemu za mfumo
-- Usajili wa mteja, kuingia, na kurejesha nenosiri.
-- Ukurasa wa masharti ya mkopo na nyaraka rasmi za kampuni.
-- Fomu ya maombi ya mkopo yenye taarifa za mwombaji na mdhamini.
-- Kupakia picha za mwombaji na mdhamini kwa njia salama.
-- Malipo kupitia Pawnpesa API baada ya kupokea nyaraka rasmi za API.
-- Ujumbe wa kuthibitisha malipo; maombi yabaki “Under Review” hadi msimamizi ayakague.
-- Dashibodi ya msimamizi ya kukagua, kuidhinisha au kukataa maombi.
-- Hatua ya bima baada ya idhini, kwa mujibu wa sera itakayothibitishwa.
-- Rekodi ya hatua zote muhimu (audit log) na ruhusa tofauti kwa mteja na msimamizi.
+Mradi unatumia Node.js built-in modules pekee; kwa sasa hauhitaji \`npm install\`.
 
-## Aina za kazi za mwombaji
-- Mfanyabiashara
-- Mkulima
-- Mwajiriwa
-- Mjiajiri
+## Mafaili yaliyopo
+- \`server.js\` — seva rahisi ya kutoa mafaili ya website.
+- \`public/index.html\` — ukurasa wa mwanzo, maelezo ya mchakato, na miundo ya kuingia/kusajili/kurejesha nenosiri.
+- \`public/styles.css\` — muonekano wa kitaalamu na unaojibadilisha kwa simu.
+- \`public/app.js\` — tab na ujumbe wa majaribio wa fomu za akaunti.
+- \`public/ombi.html\` — fomu ya mfano ya ombi la mkopo.
+- \`public/loan.js\` — uthibitishaji wa fomu ya mfano.
+- \`package.json\` — amri ya kuanzisha seva.
 
-## Usalama unaohitajika
-- Backend na hifadhidata yenye udhibiti wa ruhusa.
-- Nenosiri zihifadhiwe kwa hashing salama; kamwe zisihifadhiwe kama maandishi ya kawaida.
-- Uthibitishaji wa server-side kwa kila maombi na mabadiliko ya hali.
-- NIDA/kitambulisho na picha zichukuliwe kama taarifa nyeti, zifichwe dhidi ya umma na zihifadhiwe kwa ruhusa finyu.
-- API keys na siri za malipo ziwekwe kwenye environment secrets, si ndani ya source code.
-- Usitumie malipo halisi mpaka Pawnpesa API na mazingira ya majaribio vithibitishwe.
+## Kilichofanya kazi katika prototype
+- Lugha ya Kiswahili na muonekano wa simu/kompyuta.
+- Fomu za mfano za kuingia, usajili, kurejesha nenosiri, na maombi ya mkopo.
+- Aina za kazi: Mfanyabiashara, Mkulima, Mwajiriwa, Mjiajiri.
+- Orodha ya kiasi cha mkopo kutoka TSh 300,000 hadi TSh 20,000,000; TSh 20,000,000 imewekewa alama ya kusubiri uthibitisho.
+- Fomu hazitumi data kwenye seva wala kuihifadhi. Usijaze NIDA halisi au kupakia picha binafsi.
 
-## Taarifa zinazohitaji kuthibitishwa kabla ya kuunganisha malipo
-1. Kiwango cha chini na cha juu cha mkopo: maelezo ya awali yanasema TSh 300,000–10,000,000 lakini pia yanataja TSh 20,000,000.
-2. Ada ya kila kiwango cha mkopo: orodha ya awali ina baadhi ya thamani zisizoeleweka au zisizoendana; hakuna ada itakayochukuliwa kuwa rasmi mpaka ithibitishwe.
-3. Masharti ya marejesho, riba, muda wa mkopo, ada nyingine, na sera ya bima.
-4. Nyaraka rasmi za kampuni zitakazoonyeshwa kwa mteja.
-5. Pawnpesa API docs, credentials za sandbox, na callback/webhook ya kuthibitisha malipo.
+## Bado haijatekelezwa
+- Usajili/kuingia halisi, hashing ya nenosiri, uthibitishaji wa barua pepe na kurejesha nenosiri.
+- Hifadhidata na udhibiti wa ruhusa za wateja/wasimamizi.
+- Uhifadhi salama wa NIDA, picha na nyaraka.
+- Dashibodi ya msimamizi, ukaguzi wa maombi, idhini/kukataliwa, na hatua ya bima.
+- Ujumbe wa kuthibitisha malipo na miunganisho ya SMS/barua pepe.
+- Pawnpesa API na uthibitishaji wa webhook.
 
-## Mpango wa utekelezaji
-1. Kubuni kiolesura cha Kiswahili cha mteja na msimamizi.
-2. Kuchagua na kusanidi backend, database, na uthibitishaji.
-3. Kutengeneza mtiririko wa maombi na ukaguzi wa msimamizi.
-4. Kujaribu kwa data ya mfano pekee.
-5. Kuunganisha Pawnpesa baada ya API docs kupatikana.
-6. Kufanya majaribio ya usalama kabla ya kutumia taarifa au malipo halisi.
+## Taarifa zinazohitaji kuthibitishwa
+1. Kiasi cha juu cha mkopo: mahitaji ya awali yalitaja TSh 10,000,000 na pia TSh 20,000,000.
+2. Ada ya kila kiasi cha mkopo: orodha ya awali ina thamani zisizo wazi au zisizolingana. Hakuna ada iliyowekwa kwenye mfumo huu mpaka ithibitishwe kwa maandishi.
+3. Riba, muda wa marejesho, ada nyingine, masharti ya bima na utaratibu wa kurejesha fedha.
+4. Nyaraka rasmi za usajili wa kampuni na masharti kamili ya mkopo.
+5. Nyaraka za Pawnpesa API, taarifa za sandbox na webhook/callback.
+
+## Usalama kabla ya uzinduzi
+- Tumia backend na hifadhidata zenye ruhusa za server-side.
+- Hash nenosiri kwa algoriti salama kama Argon2id au bcrypt; usilihifadhi kama maandishi ya kawaida.
+- Hifadhi API keys kwenye environment secrets; usiziweke kwenye GitHub source code.
+- Linda NIDA/picha kwa ruhusa finyu na storage isiyo ya umma.
+- Hakiki malipo kupitia webhook iliyosainiwa na uthibitishaji wa upande wa seva; usiamini taarifa kutoka browser pekee.
+- Fanya majaribio ya usalama kabla ya kupokea taarifa au malipo halisi.
+
+**Tahadhari:** hii ni prototype ya maendeleo tu. Haiwezi kupokea maombi halisi, kufungua akaunti, au kuchakata malipo.
