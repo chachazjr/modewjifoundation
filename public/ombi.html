@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d26">
+  <meta name="description" content="Fomu ya mfano ya maombi ya mkopo ya Modewji Foundation.">
+  <title>Fomu ya Ombi | Modewji Foundation</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/loan.js" defer></script>
+</head>
+<body>
+  <div class="demo-banner"><span class="pulse"></span> TOLEO LA MAJARIBIO · Usijaze NIDA halisi wala kupakia picha binafsi</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Modewji Foundation mwanzo"><span class="brand-mark">M<span>F</span></span><span class="brand-name">MODEWJI <strong>FOUNDATION</strong><small>Fursa. Maendeleo. Uaminifu.</small></span></a>
+    <nav class="main-nav" aria-label="Menyu kuu"><a href="/">Mwanzo</a><a href="/#hatua">Jinsi inavyofanya kazi</a><a href="/#usalama">Usalama</a></nav>
+    <a class="button button-outline header-login" href="/">Rudi mwanzo</a>
+  </header>
+  <main class="loan-page">
+    <div class="loan-page-heading"><a class="back-link" href="/">← Rudi mwanzo</a><div class="eyebrow">HATUA YA MAOMBI</div><h1>Fomu ya ombi la <span>mkopo.</span></h1><p>Jaza taarifa za mfano ili kuona muundo wa fomu. Mfumo huu bado hauhifadhi wala kutuma maombi.</p></div>
+    <div class="loan-warning"><strong>⚠ Jaribio pekee</strong><p>Usiandike NIDA halisi, namba za vitambulisho, anuani halisi, wala kupakia picha zako au za mdhamini. Fomu hii bado haina hifadhidata wala usafirishaji salama wa nyaraka.</p></div>
+    <form id="loan-form" class="loan-form" novalidate>
+      <section class="form-section">
+        <div class="form-section-heading"><span>01</span><div><h2>Taarifa za mkopo</h2><p>Chagua kiasi unachotaka kuomba.</p></div></div>
+        <div class="form-grid">
+          <label>Kiasi cha mkopo (TSh)<select name="amount" id="loan-amount" required><option value="">Chagua kiasi</option><option value="300000">TSh 300,000</option><option value="400000">TSh 400,000</option><option value="500000">TSh 500,000</option><option value="600000">TSh 600,000</option><option value="700000">TSh 700,000</option><option value="800000">TSh 800,000</option><option value="900000">TSh 900,000</option><option value="1000000">TSh 1,000,000</option><option value="1500000">TSh 1,500,000</option><option value="2000000">TSh 2,000,000</option><option value="3000000">TSh 3,000,000</option><option value="4000000">TSh 4,000,000</option><option value="5000000">TSh 5,000,000</option><option value="6000000">TSh 6,000,000</option><option value="7000000">TSh 7,000,000</option><option value="8000000">TSh 8,000,000</option><option value="9000000">TSh 9,000,000</option><option value="10000000">TSh 10,000,000</option><option value="20000000">TSh 20,000,000 — inasubiri uthibitisho</option></select></label>
+          <div class="amount-note"><span class="amount-note-icon">ⓘ</span><div><strong>Ada na masharti</strong><p>Ada, riba na muda wa marejesho havijawekwa kwa sababu vinahitaji uthibitisho rasmi. Hakuna malipo yanayopokelewa hapa.</p></div></div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-section-heading"><span>02</span><div><h2>Taarifa za mwombaji</h2><p>Tumia taarifa za kubuni katika jaribio hili.</p></div></div>
+        <div class="form-grid">
+          <label>Majina kamili<input name="applicantName" placeholder="Mfano: Amani Juma" required></label>
+          <label>Mahali unapoishi<input name="residence" placeholder="Mfano: Mkoa / wilaya ya mfano" required></label>
+          <label>Umri<input name="age" type="number" min="18" max="100" placeholder="Miaka" required></label>
+          <label>Jinsia<select name="gender" required><option value="">Chagua</option><option>Mwanamke</option><option>Mwanaume</option><option>Sipendi kutaja</option></select></label>
+          <label>Kazi / shughuli<select name="occupation" required><option value="">Chagua aina ya kazi</option><option>Mfanyabiashara</option><option>Mkulima</option><option>Mwajiriwa</option><option>Mjiajiri</option></select></label>
+          <label>Namba ya kitambulisho (mfano tu)<input name="applicantId" placeholder="Usiweke NIDA yako halisi" required></label>
+          <label class="file-field">Picha ya mwombaji (mfano tu)<input type="file" name="applicantPhoto" accept="image/*"><small>Usichague picha binafsi kwenye toleo hili.</small></label>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-section-heading"><span>03</span><div><h2>Taarifa za mdhamini</h2><p>Mdhamini mmoja anahitajika katika muundo wa fomu.</p></div></div>
+        <div class="form-grid">
+          <label>Majina kamili ya mdhamini<input name="guarantorName" placeholder="Majina ya mfano" required></label>
+          <label>Namba ya kitambulisho (mfano tu)<input name="guarantorId" placeholder="Usiweke kitambulisho halisi" required></label>
+          <label class="file-field">Picha ya mdhamini (mfano tu)<input type="file" name="guarantorPhoto" accept="image/*"><small>Usichague picha binafsi kwenye toleo hili.</small></label>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-section-heading"><span>04</span><div><h2>Thibitisha kabla ya kuendelea</h2><p>Hii ni sehemu ya majaribio, si mkataba wa mkopo.</p></div></div>
+        <label class="loan-consent"><input type="checkbox" name="demoConsent" required><span>Ninaelewa kuwa hii ni fomu ya mfano, haitumi taarifa popote, na situmii taarifa halisi za utambulisho au picha binafsi.</span></label>
+        <div id="loan-message" class="demo-message" role="status" aria-live="polite" hidden></div>
+        <button class="button button-primary button-full loan-submit" type="submit">Jaribu fomu <span>→</span></button>
+        <p class="form-footnote">Hakuna ombi halisi litakalotumwa. Hali ya “Under Review” na ukaguzi wa msimamizi vitajengwa kwenye hatua inayofuata ya backend.</p>
+      </section>
+    </form>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="/"><span class="brand-mark">M<span>F</span></span><span class="brand-name">MODEWJI <strong>FOUNDATION</strong><small>Fursa. Maendeleo. Uaminifu.</small></span></a><p>© <span id="year"></span> Modewji Foundation.</p><span class="footer-status"><i></i> Toleo la majaribio</span></footer>
+</body>
+</html>
